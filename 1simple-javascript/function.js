@@ -6,3 +6,15 @@ function hello() {
 
 let msg = hello();
 console.log(msg);
+
+
+//function expression type
+
+const hello = function (){
+    console.log("Hello world!");
+};
+
+//named function expression type
+const hello = function hello(){
+    console.log("Hello world!");
+};
