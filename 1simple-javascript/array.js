@@ -83,3 +83,29 @@ const result = fruits.map((f) => `${f} -`);
 console.log(result);
 console.log(fruits);
 /////////////
+
+
+//reduce
+const numbers = [1, 2, 3, 4, 5];
+const result = numbers.reduce((total, currValue) => total + currValue, 0);
+
+console.log(result);
+
+//forOf array
+const numbers = [1, 2, 3, 4, 5];
+const name = "Akash";
+
+for (c of name){
+    console.log(c);
+}
+
+//forIn object
+const language = {
+    name: "Javascript",
+    year: "1995",
+    creator: "Brendon Each"
+}
+
+for (key in language){
+    console.log(language[key]);
+}
