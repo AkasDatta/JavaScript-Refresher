@@ -18,3 +18,8 @@ const hello = function (){
 const hello = function hello(){
     console.log("Hello world!");
 };
+
+// arrow function
+const hello = () => {
+    console.log("Hello world!");
+}
