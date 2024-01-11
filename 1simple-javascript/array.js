@@ -46,6 +46,7 @@ const fruits = ["Banana", "apple", "mango"];
 const result = fruits.push("Frout");
 console.log(result);
 
+////////////////
 // map
 const fruits = ["Banana", "apple", "mango"];
 
@@ -59,3 +60,26 @@ const result = fruits.map((f) => {
 });
 console.log(result);
 console.log(fruits);
+
+// normal for loop
+const fruits = ["Banana", "Apple", "mango", "Apple"];
+const res = [];
+for(let i = 0; i <= fruits.length; i++){
+    if (fruits[i] === "Apple"){
+        result.push("Apple");
+    } else {
+        res.push("N/A")
+    }
+}
+console.log(result);
+console.log(fruits);
+
+
+// all elements added - 
+const fruits = ["Banana", "apple", "mango"];
+
+const result = fruits.map((f) => `${f} -`);
+
+console.log(result);
+console.log(fruits);
+/////////////
