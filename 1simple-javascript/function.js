@@ -61,3 +61,16 @@ const hello = () => ({
         b: 6,
 });
 console.log(hello());
+
+// anonymous function
+function hello() {
+    return () => {
+        console.log("Hello world!");
+    }
+}
+//
+function hello() {
+    return function() {
+        console.log("Hello world!");
+    }
+}
