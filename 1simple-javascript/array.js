@@ -109,3 +109,47 @@ const language = {
 for (key in language){
     console.log(language[key]);
 }
+
+//object keys, values, entries
+const language = {
+    name: "Javascript",
+    year: "1995",
+    creator: "Brendon Each"
+}
+console.log(Object.keys(language));
+console.log(Object.values(language));
+console.log(Object.entries(language));
+
+//object dynamic
+const language = {
+    name: "Javascript",
+    year: "1995",
+    creator: "Brendon Each"
+}
+
+language.popularity = "100%";
+console.log(language);
+
+//
+const a = "popularity";
+const language = {
+    name: "Javascript",
+    year: "1995",
+    creator: "Brendon Each"
+};
+// language["name"];
+language[a] = "100%";
+console.log(language);
+
+//
+const a = "popularity";
+const language = {
+    name: "Javascript",
+    year: "1995",
+    creator: "Brendon Each",
+    // a: a,
+    a,
+};
+// language["name"];
+language[a] = "100%";
+console.log(language);
