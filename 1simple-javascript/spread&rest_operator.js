@@ -39,6 +39,24 @@ const result = {
     ...fruits,
 };
 console.log(result);
+/////////////
 
 
+// rest
+function sum (...rest){
+    console.log(rest);
+}
+sum(5, 6, 8, 9);
 
+// 
+function sum (...rest){
+    return rest.reduce((sum, cur) => sum + cur, 0);
+}
+console.log(sum(5, 6, 8, 9));
+
+// 
+function sum (text, ...rest){
+    const result = rest.reduce((sum, cur) => sum + cur, 0);
+    console.log(`${text} ${result}`);
+}
+sum("The sum is: ", 5, 6, 8, 9);
